@@ -1,19 +1,32 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>连连看</title>
-<style type="text/css">
-body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin: 0;padding: 0}
-body,table,tr,td,input,div{font-size: 13px;line-height: 24px}
-html{
-  color: #000;
- 	overflow-y: scoll;
- 	overflow: -moz-scrollbars-vertical
-}
-#con{position: absolute;width: 1360px;height: 640px;left: 10%;top: 10%;}
-#con, .pic{background-color: #F8F8F8}
-.pic{width: 40px;height: 40px;position: absolute;background-size: 40px;border: 2px solid #F8F8F8}
-</style>
-<script language="javascript" src="js/jquery-3.1.1.min.js"></script>	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>连连看</title>
+      <style type="text/css">
+	body,table,tr,td,input,div{font-size: 13px;line-height: 24px}
+        html{
+          color: #000;
+ 	  overflow-y: scoll;
+ 	  overflow: -moz-scrollbars-vertical
+        }
+        #con{
+	  position: absolute;
+	  width: 1360px;
+	  height: 640px;
+	  left: 10%;
+	  top: 10%;
+	}
+        #con, .pic{background-color: #F8F8F8}
+        .pic{
+	  width: 40px;
+	  height: 40px;
+	  position: absolute;
+	  background-size: 40px;
+	  border: 2px solid #F8F8F8
+	}
+      </style>
+      <script language="javascript" src="js/jquery-3.1.1.min.js"></script>	
 <script language="javascript">
   var start = new Date();
   var end;
@@ -36,7 +49,7 @@ html{
       rows: 16, // 8
       cols: 34, // 17
       pics: ["img/01.svg", "img/02.svg", "img/03.svg","img/04.svg","img/05.svg","img/06.svg","img/07.svg","img/08.svg",
-			       "img/11.svg", "img/12.svg", "img/13.svg","img/14.svg","img/15.svg","img/16.svg","img/17.svg","img/18.svg"],
+             "img/11.svg", "img/12.svg", "img/13.svg","img/14.svg","img/15.svg","img/16.svg","img/17.svg","img/18.svg"],
       border: {
         show: "2px solid #00ff66",
         hide: "2px solid #F8F8F8"
@@ -96,7 +109,7 @@ html{
         p.style.marginLeft = this.data[i].x + "px";
         p.style.marginTop = this.data[i].y + "px";
         p.style.background = this.data[i].bg;
-				p.style.backgroundSize = "40px";
+        p.style.backgroundSize = "40px";
         p.id = "o_" + x + "_" + y;
         this.data[i].id = p.id;
         if (this.data[i].bg != "") {
