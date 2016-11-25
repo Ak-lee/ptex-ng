@@ -4,12 +4,16 @@
 <style type="text/css">
 body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin: 0;padding: 0}
 body,table,tr,td,input,div{font-size: 13px;line-height: 24px}
-html{color: #000;overflow-y: scoll;overflow: -moz-scrollbars-vertical}
-#con{position: absolute;width: 755px;height: 360px;left: 50%;top: 50%;margin-left: -375px;margin-top: -180px}
+html{
+  color: #000;
+ 	overflow-y: scoll;
+ 	overflow: -moz-scrollbars-vertical
+}
+#con{position: absolute;width: 1360px;height: 640px;left: 10%;top: 10%;}
 #con, .pic{background-color: #F8F8F8}
 .pic{width: 40px;height: 40px;position: absolute;background-size: 40px;border: 2px solid #F8F8F8}
 </style>
-<script language="javascript" src="js/jquery1.3.2.js"></script>	
+<script language="javascript" src="js/jquery-3.1.1.min.js"></script>	
 <script language="javascript">
   var start = new Date();
   var end;
@@ -29,9 +33,10 @@ html{color: #000;overflow-y: scoll;overflow: -moz-scrollbars-vertical}
       offset: 4,
       width: 40,
       height: 40,
-      rows: 8,
-      cols: 17,
-      pics: ["img/01.svg", "img/02.svg", "img/03.svg","img/04.svg","img/05.svg","img/06.svg","img/07.svg","img/08.svg"],
+      rows: 16, // 8
+      cols: 34, // 17
+      pics: ["img/01.svg", "img/02.svg", "img/03.svg","img/04.svg","img/05.svg","img/06.svg","img/07.svg","img/08.svg",
+			       "img/11.svg", "img/12.svg", "img/13.svg","img/14.svg","img/15.svg","img/16.svg","img/17.svg","img/18.svg"],
       border: {
         show: "2px solid #00ff66",
         hide: "2px solid #F8F8F8"
